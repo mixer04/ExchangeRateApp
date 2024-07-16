@@ -1,10 +1,10 @@
 # ExchangeRateApp
 
-A simple Python application that uses the ExchangeRate-API to fetch real-time exchange rates.
+This is a simple Python application that uses the ExchangeRate-API to fetch real-time exchange rates.
 
 ## Installation
 
-Install the required packages:
+Install the `requests` library by running the following command:
 
 ```bash
 pip install requests
@@ -12,20 +12,20 @@ pip install requests
 
 ## Usage
 
-First, sign up for a free API key from ExchangeRate-API (https://www.exchangerate-api.com/).
+In a  file named `api_key.txt` in the same directory as your Python script, add your ExchangeRate-API key.
 
-Paste your API key into it.
-
-Now, you can run the app:
+Now, you can run the application using the following command:
 
 ```bash
 python exchange.py
 ```
 
-The app will prompt you to enter the base currency, target currency, and the amount to convert. It will then display the exchange rate for the given amount.
+The application will prompt you to enter the base currency, target currency, and the amount to convert. It will then display the exchange rate for the given amount.
 
 ## API Key
 
-The API key is stored in a separate file (`api_key.txt`) to avoid exposing it in the code. This file should be in the root directory of the project.
+To use the ExchangeRate-API, you need to sign up for a free account at https://www.exchangerate-api.com/. Once you have signed up, you will receive an API key.
 
-Enjoy!
+## Error Handling
+
+The application includes basic error handling for invalid API keys and network issues. If the API is not working or the API key is invalid, the application will display an appropriate error message.
